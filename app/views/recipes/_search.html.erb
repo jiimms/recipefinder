@@ -1,0 +1,10 @@
+
+<%=form_tag(recipes_index_path, :method => 'get') do %>	
+<p class = search_bar>
+	<%= text_field_tag :search, params[:search], placeholder: "Search"%>
+	
+	<%= submit_tag "Search"%>
+	</p>
+<% end%>
+
+<%= link_to "Back"%>
